@@ -9,6 +9,7 @@ function submit(){
     let result = Number(inputOne) + Number(inputTwo)
     console.log(result)
     // console.log(inputOne,inputTwo)
+    //output
     let resultEle = document.querySelector('#resultElement')
     resultEle.innerText = result;
 }
