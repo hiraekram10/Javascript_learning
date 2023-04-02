@@ -3,6 +3,7 @@
 //     console.log(userinput)
 // }
 
+//submit function
 function submit(){
     let inputOne = document.querySelector('#inputOne').value;
     let inputTwo = document.querySelector('#inputTwo').value;
@@ -12,4 +13,17 @@ function submit(){
     //output
     let resultEle = document.querySelector('#resultElement')
     resultEle.innerText = result;
+}
+
+//multiplying
+
+ function calculate(){
+    let multiOne = document.querySelector("#multiOne").value
+    let multiTwo = document.querySelector("#multiTwo").value
+    let result = Number(multiOne) * Number(multiTwo)
+    console.log(multiOne, multiTwo)
+    console.log(result);
+    
+    
+
 }
