@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="submit()">
+    <label for="">what was your total marks:</label>
+  
+    <input required type="number" id="inpOne" placeholder="850">
+    <br>
+    <label for=""> What was your obtain marks:</label>
+    <input type="number" id="inpTwo" placeholder="550">
+    <br>
+    <button type="submit" > check</button>
+</form>
+
+
+
+    <script>
+        function submit(){
+        let totalMark = document.querySelector('#inpOne').value;
+        console.log('Total mark',totalMark)
+        let obtainMark = document.querySelector('#inpTwo').value;
+        console.log('Obtain Mark',obtainMark)
+
+        // let result = document.querySelector('#heading')
+        // result.innerHTML = totalMark + " "+ obtainMark
+        let result = 0
+
+    //   if(totalMark <800){
+        
+    //   }
+
+        
+    }
+
+    </script>
+</body>
+</html>
+
