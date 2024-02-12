@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>For loop</h1>
+    <h2>nested Loop</h2>
 
 
     <script>
@@ -37,18 +38,62 @@
 //     }
 
 
-var fname = ["Ekram","Fatima"]
-var lName = ['hira','sidra','uzma','kishwer']
-var name =[]
-for(var i=0; i< fname.lengthi;i++){
-  for(var j =0; j <lName.length; j++){
- console.log(lName[j]);
-  }
-  
-}
+// var fname = ["Ekram","Fatima"]
+// var lName = ['hira','sidra','uzma','kishwer']
+
+// multiplying together
+
+// var fname = [2,4,5,6,7,2]
+// var lName = [4,5,2,3,6,9,8]
+
+// let i = 0;
+// let j = fname.length -1
+
+// for(; i< fname.length;){
+//   console.log("text", fname[i]);
+//   console.log("num", lName[j]);
+//   fname[i] = fname[i] *lName[j]
+//   i++
+//   j--
+//   }
+//   console.log(fname);
+
+
+let arr = [
+    [3,4,5],
+    [6,3,2,1],
+    [6,2,3]
+]
+
+// for(var i =0; i< arr.length; i++){
+
+//     console.log(arr[i]);
+//     for(let j = 0; j < arr[i].length; j++){
+//         console.log(arr[i][j]);
+
+//         arr[i][j] = arr[i][j] * 2
+//     }
+
+// }
+//   console.log("result",arr);
+
+
+// let newArr = arr.map((allItem,i)=>{
+//    console.log("allItem", allItem);
+//    return allItem
+// })
+// console.log(newArr);
+
+
+let Isopen = true;
+let response = ""
+
+ response = Isopen?"congratulations your gate is open":"oh gate closed"
+
+console.log(response);
 
 
         
     </script>
 </body>
-</html>+
+</html>
