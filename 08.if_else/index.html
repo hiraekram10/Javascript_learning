@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Most impotant aspect for js is if else</h1>
+    <!-- Dision making..... konsi dressing kron party wear example -->
+
+    <!-- definition
+    The if...else statement executes a statement if a specified condition is truthy.
+     If the condition is falsy,
+     another statement in the optional else clause will be executed.
+    -->
+
+
+    <!--  In programing input is user important IPO model (input process output processor)
+    remaining program of javascript how to process we learnt in it
+    if temp is grater than 30 so its hot otherwise its cold -->
+
+    <!-- syntax
+    if (condition)
+  statement1
+
+// With an else clause
+if (condition)
+  statement1
+else
+  statement2
+    
+    
+    
+    -->
+
+
+    <script>
+        // boolean for yes no question true false take short place in comp memory as compared to 
+        //no & string
+        //         let isMarried = false;
+        //         let isOnline = true;
+
+        // >>>>>>>>>>>>>>>>>  starts <<<<<<<<<<<<<<
+        let userInpTemp = "prompt('entertemppp in centigrade',deafalt value as parameter)"
+
+        userInpTemp = Number(userInpTemp)
+        let condidtion = userInpTemp > 30
+
+        console.log('condition: ' + condidtion);
+        if (condidtion) {
+            console.log("grmi hai");
+        }
+        else {
+            console.log("grmi ka mosam nhi hai ");
+        }
+
+        // {} block of | if ki body
+
+        //    js need boolean  try to parse it in boolean  6 values called falsy values
+        // "", 0>-0 , undefined, null, NaN false
+      // "0" truthy value
+
+  
+
+
+//  example  
+   let word = 'Bag' 
+   if(word){
+    console.log("true hogai");
+   } else{
+    console.log("false jogai");
+   }  
+// example
+   if(false){
+    console.log('true');
+   }else{
+    console.log('false');
+   }
+
+         // program to check if the number is even or odd
+// take input from the user
+var numbern = 'prompt("Enter a number: ")';
+
+//check if the number is even
+if(numbern % 2 == 0) {
+    console.log("The number is even.");
+}
+
+// if the number is odd
+else {
+    console.log("The number is odd.")}
+
+
+//    >>>>>>>>>>>>>>>>>>> chain statement <<<<<<<<<<<<<<<<
+
+
+let temp = -200;
+
+//    if(temp > 30){
+//     console.log('grmi hai');
+//    }else if(temp > 25) {
+//     console.log('mosam  theek hai');
+    
+//    }else if(temp > 20) {
+//     console.log('mosam bs theek hai');
+    
+//    }else{
+//     console.log("jacket lakr jao")
+//    }
+
+if(temp <= 20){
+    console.log('jacket lejao');
+   }else if(temp <30) {
+    console.log('mosam  theek hai');
+    
+   }else if(temp >0) {
+    console.log('mosam bs theek hai');
+    
+   }else{
+    console.log("jacket lakr jao")
+   }
+
+// BMI Task
+
+    </script>
+</body>
+
+</html>

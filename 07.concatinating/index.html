@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concat</title>
+</head>
+<body>
+    <h1>Concatinating</h1>
+    <p>using the plus operator the code combines "concates"</p>
+
+    <script>
+                   // string literal
+        let result = '2 plus 2 eqauls ' + 2 + 2;
+        console.log(result) //22
+
+        //association of + left to right
+        //string plus with number it converts number in string
+        //it doesnt matter number is befor string or after
+
+        let result2 = '2 plus 2 eqauls ' - 2 ;
+        console.log(result2) // Nan
+
+        let result3 = 3 + "3 equal to 2"
+        console.log(result3); 
+
+        // let result4 = "3  plus 2 is: " + 4 * 5
+        // console.log(result4);//20   bcz precedence
+
+        let result4 = ('3  plus 2 is:' + 3) * 2;
+        console.log(result4) // Nan bcz precedencde
+
+// prompt .......... remaining
+    </script>
+</body>
+</html>
