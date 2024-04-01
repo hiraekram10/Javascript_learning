@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- condition cheking with switch statement -->
+    <!-- imagine user have menu  -->
+
+    <!-- The switch statement evaluates an expression, matching the expression's value 
+        against a series of case clauses, and executes statements after the first 
+        case clause with a matching value, until a break statement is encountered -->
+
+
+    <script>
+
+        // Switch statement JavaScript mein ek conditional statement hai jo multiple cases ko check karta hai 
+        // aur based on a condition ke match hone par specific code blocks ko execute karta hai. 
+        // Yeh statement kuch is tarah kaam karta hai
+
+        var userInp = "gallery"
+        switch (userInp) {
+
+            case "home":
+                console.log("you selected home");
+                console.log('hi/');
+                break;
+
+            case "gallery":
+                console.log("you selected gallery");
+                break; // if no use of break it runs all code till end
+
+            case "contact":
+                console.log("you selected contact");
+                break;
+
+            default:
+                console.log("inValid");
+                break;
+        } // you selected gallery
+
+
+
+        //  >>>>>>>>>>>>>>>>>>>>> Secoond Example <<<<<<<<<<<<<<<<<<<<<
+
+        var day = 6;
+        var dayName;
+
+        switch (day) {
+            case 1:
+                dayName = "Pir";
+                break;
+            case 2:
+                dayName = "Mangal";
+                break;
+            case 3:
+                dayName = "Budh";
+                break;
+            case 4:
+                dayName = "Jumeraat";
+                break;
+            case 5:
+                dayName = "Jumma";
+                break;
+            case 6:
+                dayName = "Hafta";
+                break;
+            case 7:
+                dayName = "Itwaar";
+                break;
+            default:
+                dayName = "Invalid din";
+                break;
+        }
+
+        console.log("Aaj ka din hai: " + dayName);
+
+
+        //  Example 3
+//     
+//     let Recipee = "juice"
+// let KitchenAppliance;
+
+//     switch(Recipee){
+//         case  "juice":
+//             KitchenAppliance = "blender";
+//             break;
+
+//         case "drink":
+//             KitchenAppliance = "chopper";
+//             break;
+
+//             default:
+//                 KitchenAppliance = "you dont have appliance";
+//                 break;
+//     }
+// console.log(Recipee ,"made in : ",KitchenAppliance ); //juice made in blender
+
+//example 4
+
+//   let favebook = "Namal"
+//   let book;
+
+//   switch(favebook){
+//     case "Mushaf":
+//      book = "little bit";
+//      break;
+
+//      case "Namal":
+//     book = "favourite book"
+//   }
+//   console.log(favebook , "my", book);
+
+
+
+    </script>
+</body>
+
+</html>
