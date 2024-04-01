@@ -23,7 +23,7 @@
     >>>>>>>>>>>>>>> || table <<<<<<<<<<<<<<<<<
     true  || true  ..true
     true  || false ..true 
-    false || true  ..true
+    false || true  ..false
     false || false ..false  
 
     >>>>>>>>>>>> logical not <<<<<<<<<<<<<
@@ -60,9 +60,13 @@
        let isMarried = true
        let isTalkative = "very"
 
-       let ootP = isMarried && isTalkative;
-       console.log(ootP); //very 
-             
+    //    let ootP = isMarried && isTalkative;
+       console.log(ootP); //very bcz both re true so returns end value
+
+       
+    //    let ootP = false && isTalkative;  //false.... bcz one is false 
+       
+    let ootP = false && null &&  isTalkative; //null... bcs  last false value
 
 
         
