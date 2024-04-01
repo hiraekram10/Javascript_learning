@@ -113,7 +113,40 @@
 //      case "Namal":
 //     book = "favourite book"
 //   }
-//   console.log(favebook , "my", book);
+//   console.log(favebook , "my", book); // Namal my favourite book
+
+// let favebook = "Namal"
+//   let book;
+
+//   switch(favebook){
+//     case "Mushaf":
+//      book = "little bit";
+//      break;
+
+//      case "NamaL":
+//     book = "favourite book"
+//     default :
+//     book = "fav is not here"
+//   }
+//   console.log(favebook , "my", book); // my my fav is not here
+
+let favebook = "namal"
+  let book;
+
+  switch(favebook){
+    case "Mushaf":
+     book = "little bit";
+     break;
+
+    case "Namal":
+    case "namal":
+    book = "favourite book";
+    break;
+    default :
+    book = "fav is not here"
+  }
+  console.log(favebook , "my", book); // namal my favourite book
+
 
 
 
