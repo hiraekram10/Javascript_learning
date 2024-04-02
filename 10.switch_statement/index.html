@@ -21,6 +21,7 @@
         // Switch statement JavaScript mein ek conditional statement hai jo multiple cases ko check karta hai 
         // aur based on a condition ke match hone par specific code blocks ko execute karta hai. 
         // Yeh statement kuch is tarah kaam karta hai
+        //in theory if else slow as compared to switch
 
         var userInp = "gallery"
         switch (userInp) {
@@ -155,10 +156,25 @@ book = book.toUpperCase() //string mehtod
 
 
 let text = "gallery";
-let char = text.charAt(7)
+let char = text.charAt(9) //charAt() returns an empty string if index is out of range, while bracket notation returns undefined
 console.log(char);
 
+let mssg  = "   Hira hi how re you behn  "
+mssg = mssg.trimEnd()  // remove white spaces from string
+console.log(mssg);
 
+
+let name = "Home"
+name = name.charCodeAt(1)// returns the Unicode of the character at a specified index (position) in a string.
+console.log(name);
+
+
+let fName = "hira ? ekram"
+fName = fName.replace("?",">")
+console.log(fName);
+
+
+// >>>>>>>>>>>>>>>>>>>>> switch task <<<<<<<<<<<<<<<<<<<<
 
     </script>
 </body>
