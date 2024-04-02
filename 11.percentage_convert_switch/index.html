@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+
+    <!-- Switch statement -->
+    <script>
+
+   
+    let percentage = prompt('Enter your pecentage');
+    percentage = Number(percentage)
+    let grade;
+    switch(true){
+        case (percentage < 90 && percentage >= 80):
+            grade = "A+";
+            break;
+        case(percentage < 80 && percentage >= 70):
+        grade= "A";
+        break;
+        case(percentage < 70 && percentage >= 60):
+        grade= "B";
+        break;
+        case(percentage < 60 && percentage >= 50):
+        grade= "C";
+        break;
+        default:grade = "fail"
+    }
+    console.log("According to your percentage "+ percentage + "your grade is" + grade);
+</script>
+    
+</body>
+</html>
