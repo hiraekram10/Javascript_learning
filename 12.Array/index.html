@@ -65,9 +65,77 @@
     // array is flexible
 
 
+    // in variable in string copy or orignal.. what do we want to change is able to just chnage it ownself
+    var name = "hira"
+    var copy2 = name;
+    console.log(name,"name");
+    console.log(copy2,"copy2");
+
+    copy2 = "Fatima"
+    console.log(name,"name"); //hira 
+    console.log(copy2,"copy2");//fatima
+
+
 
     var names = ['hira','sidra','uzma'];
-    var copy = 
+    var copy = names
+    console.log(names,"names");// same ans
+    console.log(copy,"copy");  //same ans
+
+    // changing in copy array
+    // copy[0] = "kishwer"
+    // console.log(names,"names")  // kisher,sidra,uzma
+    // console.log(copy,"copy");   //kisher,sidra,uzma
+
+    // chnage in oringnal array
+   names[0] = "kishwer"
+    console.log(names,"names")  // kisher,sidra,uzma
+    console.log(copy,"copy"); // kisher,sidra,uzma
+
+    // we change in copy or chnge in orignal array it will chnage in both orignal or copy
+
+    // in programming languages main vars two types k hote primitive(sage apne)... part of programming languge core 
+    //  non-prmitive (soltela)... kuch construct hote built nhi 
+//   in js array is non primitive = sotela
+
+//  when we copy primitive (deep copy)
+// copy by value in memory they take proper place
+
+
+// when we copy non-primitive  (copy by refrence)(shallow copy)
+// in arry place memory main elocate hogai they save memory address
+// jb main name likhti hon tou address utha kr dedeta 
+// phir jb main copy bnati hon tou dono ko ek hi address mil jata same new nhi 
+// bnata effeciency rehti by default iska behavios yeh hai
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<, here is our probem bcz we need independent copy 
+
+// copy mthod called cloning
+// >>>>>>>>>>>>>>>>>> es5 cloning<<<<<<<<<<<<<<<
+
+// array.concat
+var originalArray = [1, 2, 3, 4, 5];
+var clonedArray = originalArray.concat();
+
+console.log("or Arr" , originalArray);
+console.log("clon Arr" , clonedArray);
+clonedArray[0] = 3
+console.log("or Arr" , originalArray); //1,2,3,4,5
+console.log("clon Arr" , clonedArray);  //3,2,3,45
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<< cloning in es6 <<<<<<<<<<<<<<<<<<<<<<
+
+
+var fruits = ["apple","mango"]
+// var copyfruits = ["apple","mango"]
+// instead this
+var copyFruit = [...fruits]  //es6 introduce spread operator
+console.log(copyFruit);
+
+
+
+    
+    
 
     </script>
 
