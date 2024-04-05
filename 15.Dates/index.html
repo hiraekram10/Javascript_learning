@@ -12,11 +12,24 @@
        // mehtod to get date it returns date and time its data type is object
 let check = new Date()
 console.log("check" ,check);
+
+
 // it doesnt change orignal obj 
-let reslt = check.toString()
-console.log(reslt);
+// let reslt = check.toString()
+// console.log(reslt);\
+
+var weakDay = check.getDay()  // 0-6 (0 sunday)
+console.log("weakDay",weakDay);
+
+var monthNo = check.getMonth() //0-11 (0 january)
+console.log("monthNo",monthNo);
+
+var yearcheck = check.getFullYear() //2024
+console.log("yearcheck",yearcheck);
 
 
+var hourNo = check.getHours() // 0-23 (0 midnigt 11pm = 23)
+console.log("hrs:",hourNo );
     </script>
     
 </body>
