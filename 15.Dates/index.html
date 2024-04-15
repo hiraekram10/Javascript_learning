@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date & Time</title>
 </head>
+
 <body>
 
 
     <script>
-       // mehtod to get date it returns date and time its data type is object
-let check = new Date()
-console.log("check" ,check);
+        // mehtod to get date it returns date and time its data type is object
+        // let check = new Date()
+        // console.log("check" ,check);
 
 
-// it doesnt change orignal obj 
-// let reslt = check.toString()
-// console.log(reslt);\
+        // it doesnt change orignal obj 
+        // let reslt = check.toString()
+        // console.log(reslt);\
 
-var weakDay = check.getDay()  // 0-6 (0 sunday)
-console.log("weakDay",weakDay);
+        // var weakDay = check.getDay()  // 0-6 (0 sunday)
+        // console.log("weakDay",weakDay);
 
-var monthNo = check.getMonth() //0-11 (0 january)
-console.log("monthNo",monthNo);
+        // var monthNo = check.getMonth() //0-11 (0 january)
+        // console.log("monthNo",monthNo);
 
-var yearcheck = check.getFullYear() //2024
-console.log("yearcheck",yearcheck);
+        // var yearcheck = check.getFullYear() //2024
+        // console.log("yearcheck",yearcheck);
 
 
-var hourNo = check.getHours() // 0-23 (0 midnigt 11pm = 23)
-console.log("hrs:",hourNo );
-// complete
+        // var hourNo = check.getHours() // 0-23 (0 midnigt 11pm = 23)
+        // console.log("hrs:",hourNo );
+        // complete
 
-var dateAtTime = new Date()
-// console.log(dateAtTime);
+
+        var monthName = ["jan", 'feb', 'march', 'april', 'may']
+
+        var dateAtTime = new Date() // April 15th 2:00 PM
+
+        var monthNo = dateAtTime.getMonth()
+        var dateNo = dateAtTime.getDate()
+        var hourNo = dateAtTime.getHours()
+        var minNo = dateAtTime.getMinutes()
+        var ampm = '';
+
+        var currentmonName = monthName[monthNo]
+        console.log(currentmonName);
+        // th logic
+        if (dateNo === 1 || dateNo === 21 || dateNo === 31) {
+            dateNo = dateNo + "st"
+        } else if (dateNo === 2 || dateNo === 22) {
+            dateNo = dateNo + "nd"
+        } else if (dateNo === 3 || dateNo === 23) {
+            dateNo = dateNo + "rd"
+        } else if (dateNo > 3) {
+            dateNo = dateNo + "th"
+        }
+        //loic am pm
+        if (hourNo <= 11) {
+            ampm = "AM"
+        } else {
+            ampm = "PM"
+        }
+
+        // ..logic  12
+        if (hourNo === 0) {
+            hourNo = 12
+
+        } else if (hourNo > 12) {
+            hourNo = hourNo - 12
+        }
+
+
+        var formatedTime = currentmonName + " "+ dateNo + " " + hourNo + ":" + minNo +" " + ampm
+        console.log(formatedTime);
+
+
+
+
     </script>
-    
+
 </body>
+
 </html>
