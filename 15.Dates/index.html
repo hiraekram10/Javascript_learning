@@ -9,6 +9,9 @@
 
 <body>
 
+    <!-- getters .get -->
+    <!-- setters -->
+
 
     <script>
         // mehtod to get date it returns date and time its data type is object
@@ -46,7 +49,7 @@
         var ampm = '';
 
         var currentmonName = monthName[monthNo]
-        console.log(currentmonName);
+        
         // th logic
         if (dateNo === 1 || dateNo === 21 || dateNo === 31) {
             dateNo = dateNo + "st"
@@ -70,6 +73,10 @@
 
         } else if (hourNo > 12) {
             hourNo = hourNo - 12
+        }
+
+        if(hourNo <=9){
+            hourNo = "0"+hourNo
         }
 
 

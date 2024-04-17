@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- practice -->
+
+    <script>
+        // practice getters
+        
+        var datenow = new Date()
+        // console.log(datenow);
+        var dayName = ['sun','mon','tues','wed','thurs','fri','sat']
+        var dayNo= datenow.getDay()
+        dayName = dayName[dayNo];
+        var monthName = ["jan","feb","mar","april","may"]
+        var montNo = datenow.getMonth()
+        monthName = monthName[montNo];
+
+        var today = datenow.getDate()
+        
+       
+        var pretime = dayName + ", " + monthName + " " + today
+        console.log(pretime);
+
+
+        
+    </script>
+</body>
+</html>
