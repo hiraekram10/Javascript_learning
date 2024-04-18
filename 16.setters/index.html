@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <!-- practice -->
+    <!-- body k end p before my custom script -->
+    <!-- head say issue hota file heavy hoti pehlay download hota then html chlta thats why always use body section -->
 
+
+
+
+
+    <!-- moment js using  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script>
-        // practice getters
+        //................ practice getters....................
         
-        var datenow = new Date()
-        // console.log(datenow);
-        var dayName = ['sun','mon','tues','wed','thurs','fri','sat']
-        var dayNo= datenow.getDay()
-        dayName = dayName[dayNo];
-        var monthName = ["jan","feb","mar","april","may"]
-        var montNo = datenow.getMonth()
-        monthName = monthName[montNo];
+        // var datenow = new Date()
+        // // console.log(datenow);
+        // var dayName = ['sun','mon','tues','wed','thurs','fri','sat']
+        // var dayNo= datenow.getDay()
+        // dayName = dayName[dayNo];
+        // var monthName = ["jan","feb","mar","april","may"]
+        // var montNo = datenow.getMonth()
+        // monthName = monthName[montNo];
 
-        var today = datenow.getDate()
+        // var today = datenow.getDate()
         
        
-        var pretime = dayName + ", " + monthName + " " + today
-        console.log(pretime);
+        // var pretime = dayName + ", " + monthName + " " + today
+        // console.log(pretime);
 
-        // date i want (object)
+        // ............................date i want (object)
 
-        var setDate =  new Date ('january 11, 2024')
-        console.log(setDate);
+    //     var setDatee =  new Date ()
+    //     console.log(setDatee);
+
+    //  var setyear = setDatee.setMonth(2)
+    //  console.log(setyear);
+
+    //........................ moment...............
+
+    // it gives string
+
+    var now = moment().format('MMMM Do hh:mm  A')
+    console.log(now);
+
 
 
 
