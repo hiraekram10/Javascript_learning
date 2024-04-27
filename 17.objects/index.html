@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- JSON 
+    javascrip Object Notation(likhne ka method) -->
+    <!--  
+    PROGRAMMING languages have built in Json support
+    it is a convinient for data interchange(ana-jana) languages(input outpt)
+     machine ek dosre say bat krti hain data ek jagah say dosri jagah jata wo kisi form main hoga
+    array yaa for complex data JSON  -->
+    <!--nowadays WEBSERVER rest apis response as JSON -->
+
+
+
+    <script>
+        // var obj = {"hira","234","ca","micro"}  //values
+        // construct
+        var obj = {
+            name: "hira",
+            rollNo: 234,
+            Dept: "CA",
+            subject: "micro",
+            // 0:"num0" not a good approach
+            "0":"num0"
+        }
+
+
+        // key value    
+        // access
+        // console.log(obj[name]); undefined bcz yeh dhondayga variable ko
+        console.log(obj["name"]);
+        console.log(obj["rollNo"]);
+        console.log(obj["Dept"]);
+        console.log(obj["subject"]);
+        console.log(obj["0"]);  //num0
+        console.log(obj);
+
+
+        // js dont have array its a object
+        // key should be string
+
+
+        // modify obj
+
+        obj["name"] = "haya"
+       obj["subject"] = "biochem"
+        console.log(obj);
+
+        // In JavaScript, you can access object properties using dot notation (.) or bracket notation ([]).
+        // .notation have some downfall
+        // 50 % time key access dynamicly 
+
+        
+    </script>
 </body>
+
 </html>
