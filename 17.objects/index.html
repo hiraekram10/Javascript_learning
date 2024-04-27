@@ -28,7 +28,7 @@
             Dept: "CA",
             subject: "micro",
             // 0:"num0" not a good approach
-            "0":"num0"
+            "0": "num0"
         }
 
 
@@ -50,14 +50,30 @@
         // modify obj
 
         obj["name"] = "haya"
-       obj["subject"] = "biochem"
+        obj["subject"] = "biochem"
         console.log(obj);
 
         // In JavaScript, you can access object properties using dot notation (.) or bracket notation ([]).
         // .notation have some downfall
         // 50 % time key access dynamicly 
 
-        
+        // Nested obj
+
+        var students = {
+            name: "bisma",
+            electives: [
+                {
+                    name: "zainab",
+                    rollNo: "34c"
+                },
+                { name: "kainat" },
+                { name: "alina" }
+            ]
+        }
+        console.log(students["electives"][0]["rollNo"]);
+        console.log(students.electives[2]);
+
+
     </script>
 </body>
 
