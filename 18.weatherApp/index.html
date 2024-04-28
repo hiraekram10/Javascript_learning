@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="getWeather(); return false">
+        <label for="cityName">city:</label>
+        <input type="text" name="" id="cityName" placeholder="Enter your city">
+        <button type="submit">get</button>
+
+    </form>
+    <div class="result"></div>
+    <!-- 92cffd285e7c2e53123d27889dc3b7fc -->
+
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module">
+        window.getWeather = function () {
+            var cityName = document.getElementById('cityName').value
+            var API_key = '070e252557e7e6a2d65e8736788cbc21'
+            axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_key}&units=metric`)
+                .then(function (response) {
+
+                    console.log("response:", response.data);
+                    document.querySelector(".result").innerHTML = "WEATHER data succesfully fine"
+                    
+                }).catch(function (error) {
+                    // handle error
+                    console.log("err:", error.data);
+                    document.querySelector(".result").innerHTML = "error in getting data"
+                })
+
+                
+
+
+        }
+    </script>
+</body>
+
+</html>
