@@ -8,10 +8,37 @@
 <body>
 <h1>Functions</h1>
 
-    <!-- Functions are one of the fundamental building blocks in JavaScript
-        Parameters are essentially passed to functions by value — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, 
+    <!-- Functions are one of the fundamental building blocks in JavaScript.
+Functions are a fundamental concept in programming, and they enable you to write organized, modular,
+  and efficient code.
+    They are crucial for creating dynamic and interactive web applications and are used extensively for 
+  various programming tasks, including event handling, data manipulation, and more.
+
+        Parameters are essentially passed to functions by value — so if the code within the body of a function assigns a completely
+         new value to a parameter that was passed to the function, 
         the change is not reflected globally or in the code which called that function.
-        Calling the function actually performs the specified actions with the indicated parameters  
+        Calling the function actually performs the specified actions with the indicated parameters 
+
+
+         When a function returns a value, it can be assigned to a variable, used in expressions,
+       or passed as an argument to another function.
+       - Use return values when you want a function to perform some computation and provide a result
+         that can be used elsewhere in your code.
+       - When a return statement is called in a function, the execution of this function is stopped. 
+         If specified, a given value is returned to the function caller. If the expression is omitted,
+         undefined is returned instead.
+       - The return statement stops the execution of a function and returns a value.
+       - Never return something on a new line without using parentheses.Try to always use parentheses when returning something on multiple lines
+
+        
+        In js function is first class citizen
+        In programming, the term "first-class citizen" refers to a language 
+        feature that allows a function to be treated like any other variable. 
+        (variable first class citizen)
+
+        -variable main store kiya jaskta ho
+        -Functions ko arguments ke tor par pass karna
+        -Functions ko return karna dusre functions se:
 
 
 
@@ -20,16 +47,55 @@
     
     -->
 
+    <button onclick="prt()">click</button>
+
+
     <script>
+        //    <script type="module">
+        // type module private\  for public  window.prt = function (){}
+
     // function
         function algo(num1,num2){
-   var sum = num1+num2
-   return sum
+        console.log(num1+num2); 
+   
         }
-       console.log(algo(1,3));
+       algo(1,3)
 
 
-    //     function avg (arr){
+ 
+
+    
+    //    average function
+    // paramtert optional
+    // return (ooutput)
+    // Arguments And Parameters
+
+    
+
+
+
+//  function declaration
+    function prt (){
+        console.log(new Date());
+    }
+//Function Invoke// call
+    prt()
+    prt()
+    prt()
+
+    //Default Parameters:
+// flexible and preventing errors when arguments are missing.
+
+function userCall(name = "user") {
+  console.log("hi " + name);
+}
+userCall("Hira");
+userCall("haya");
+
+
+
+
+       //     function avg (arr){
     //     var sum = 0 
     //     for(var i =0; i<arr.length; i++){
     //         sum = sum  + arr[i]
@@ -37,9 +103,9 @@
        
     //     return sum
     // }
-
     
-    //    average function
+
+
 
     function avg (arr){
         var sum = 0 
@@ -52,7 +118,28 @@
     console.log("average",avg([5,2,3,4]));
 
 
-    function prt 
+    // first constition for 1st class
+
+    let abc = function printing(){
+        console.log('hi');
+    }
+
+   
+ abc()
+
+
+//  pure function
+//  function which depends pnly on input parameter called pure function
+
+// impure function
+
+// unexpected output new Date()
+    
+
+
+
+
+   
     </script>
     
 </body>
