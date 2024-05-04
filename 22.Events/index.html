@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Events in js</h1> 
+   <!-- real life event wedding accident election -->
+   <!-- bast howa hai tou uski awaz hm sunengay -->
+   <!-- paradigam -->
+
+   <p>A programming paradigm is a method or style of programming that defines a set of principles </p>
+   <!-- program ki approad k kesay bnane 
+    -- functional programming (js functional ko follow krta)
+    --oop(js main kam hai )
+    --Event driven programming (all work at event)
+    event generate hota hai mouse click is event operating system 
+    event oho tou object milta
+-->
+
+<img id="myImg" src="./download.jpeg" alt="" onmouseover="swapImg()" onmouseleave="previosorigin()" width="400" height="300">
+
+<script>
+    function swapImg (){
+console.log("done")
+var ele = document.querySelector('#myImg')
+ele.src ="./girl.jpeg"
+    }
+    function previosorigin(){
+        console.log("back")
+var ele = document.querySelector('#myImg')
+ele.src ="./download.jpeg"
+
+    }
+</script>
+
+    
+</body>
+</html>
