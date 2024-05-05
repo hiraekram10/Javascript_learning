@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event</title>
+    <style>
+        #dragon{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse Events</h1>
+    
+
+    <img src="./pngwing.com.png" alt="" width="60" id="dragon">
+
+    <script>
+
+        var dragon =document.querySelector('#dragon')
+     function bodyMouse(event){
+   console.log("event",
+   event.pageX,
+   event.pageY
+     )
+     dragon.style.display = "block"
+     dragon.style.position = 'fixed'
+     dragon.style.left = `${event.pageX}px`
+     dragon.style.top = `${event.pageY}px`
+
+     }
+     var body = document.querySelector('body')
+     document.addEventListener("mousemove",bodyMouse)
+     document.addEventListener("mouseout",function(){
+        dragon.style.display= 'none'
+     })
+    </script>
+</body>
+</html>
