@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
+
 <body>
 
     <h1>DOM</h1>
-   <p> It is Organization chart (blue print) created automatically by browser when web page load</p> 
-   <!-- model means blue print -->
-   <!-- browser ko just js smjh ati html css nhi getElemnt by id wo ek object hota
+    <p> It is Organization chart (blue print) created automatically by browser when web page load</p>
+    <!-- model means blue print -->
+    <!-- browser ko just js smjh ati html css nhi getElemnt by id wo ek object hota
 
 DOM (Document Object Model) JavaScript ka ek programming interface hai jo web documents ki 
 structure ko objects ke tree ki shakal mein represent karta hai -->
 
-<!-- ap apne code main say kuch access chataty hon document say sirf yeh btakr k wo kahan hai-->
-<!-- move delete by manipulating  -->
-<!-- Data structure 101  (basic start)-->
-<!-- using js make ur website from scrach -->
 
-    
+    <!-- Benefits -->
+
+    <!-- ap apne code main say kuch access chataty hon document say sirf yeh btakr k wo kahan hai-->
+    <!-- move delete by manipulating  -->
+    <!-- Data structure 101  (basic start)-->
+    <!-- using js make ur website from scratch 
+    Node each box represent
+              
+
+                 Node
+
+Ek Node ek data structure hai jo ek maan (value) ko store karta hai, jo kisi bhi 
+data type ka ho sakta hai, aur ek pointer (ya reference) 
+rakhta hai doosre node ki taraf. Ye data structure aam tor par linked list mein istemal hota hai.
+
+node ek laptop hai jo connected hai router say router bhi node hai isp say connect hai wo pole ki switch node hai
+insb ko mila kr network bna interconnected
+
+            DOM JUNKatrifacts  (spaces)
+        solutions
+        -<html
+    ><body>
+
+        -html ek line mn likhdo
+       - minify (we dont use minify)
+       - we use react library automatic minifier
+-->
+
+
+<button id="add" onclick="addingEle()">create</button>
+
+<script>
+
+
+
+function addingEle(){
+   var bol=  document.createElement("b")
+   var textele = document.createTextNode("hi meri baby")
+   bol.appendChild(textele)
+   document.body.append(bol)
+   console.log(bol);
+
+}
+
+
+</script>
+
+
+
 </body>
+
 </html>
